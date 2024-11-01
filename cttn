@@ -1,0 +1,181 @@
+/* Set margin dan padding ke nilai nol untuk semua elemen HTML untuk menciptakan konsistensi dalam tata letak */
+*,
+html{
+ margin: 0;
+ padding: 0;   
+}
+
+
+/* Mengatur tampilan untuk navigasi di atas halaman */
+.Navbar {
+    background-color: 56AEEC; /* Warna latar belakang */
+    width: 100%; /* Lebar */
+    height: 100px; /* Tinggi */
+}
+
+/* Mengatur tata letak dan tampilan untuk elemen-elemen dalam navigasi */
+.ul-Navbar {
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    height: 100px; /* Tinggi yang sama dengan Navbar */
+    justify-content: center ; /* Pusatkan item di dalam navbar secara horizontal */
+    align-items: center; /* Pusatkan item di dalam navbar secara vertikal */
+}
+
+/* Mengatur tampilan untuk item navigasi dalam daftar */
+.li-navbar {
+    list-style-type: none; /* Hilangkan tanda list */
+    padding: 20px; /* Ruang di sekitar teks */
+    margin: 5px; /* Jarak antara item */
+    color:white; /* Warna teks */
+    font-size: 30px; /* Ukuran teks */
+}
+
+/* Efek saat item navigasi dihover */
+.li-navbar:hover {
+    background-color: tomato; /* Warna latar belakang */
+    transition: .5s ease-in-out; /* Efek transisi */
+    transition-delay: .3s; /* Penundaan transisi */
+    border-radius:  8px; /* Membuat sudut elemen menjadi bulat */
+}
+
+/* Mengatur tampilan untuk tautan navigasi */
+.a-navbar{
+    color: white; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah tautan */
+    font-weight: 800; /* Ketebalan teks */
+}
+
+/* Mengatur tampilan dan tata letak untuk konten utama di halaman */
+.conten{
+    background-color: #f7f7f7; /* Warna latar belakang */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+    height:80vh; /* Tinggi konten */
+}
+
+.contenSkil {
+    background-color: #f7f7f7; /* Warna latar belakang */
+    display: flex;
+    flex-direction: column; /* Atur arah elemen menjadi vertikal */
+    justify-content: flex-start; /* Mulai dari bagian atas kontainer */
+    align-items: flex-start; /* Teks dimulai dari kiri */
+    padding: 20px; /* Tambahkan padding untuk memberi jarak dari tepi */
+    height: auto; /* Mengatur tinggi otomatis */
+    max-width: 800px; /* Atur lebar maksimum konten */
+    width: 100%; /* Pastikan konten mengambil lebar penuh dari kontainer */
+    margin: 0 auto; /* Pusatkan konten secara horizontal */
+    box-sizing: border-box; /* Sertakan padding dalam perhitungan lebar */
+}
+
+.contenSkil h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333; /* Warna teks judul */
+}
+
+.contenSkil h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px; /* Tambahkan margin bawah untuk jarak yang lebih baik */
+    color: #555; /* Warna teks sub-judul */
+}
+
+.contenSkil p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666; /* Warna teks paragraf */
+}
+
+/* Tambahan untuk responsivitas */
+@media (max-width: 800px) {
+    .contenSkil {
+        max-width: 100%; /* Atur lebar maksimum untuk perangkat kecil */
+        padding: 15px; /* Kurangi padding pada perangkat kecil */
+    }
+}
+/* Gaya untuk daftar keterampilan */
+.contenSkil ul {
+    list-style-type: disc; /* Gaya bullet */
+    padding-left: 20px; /* Jarak kiri untuk list */
+    margin: 10px 0;
+}
+
+.contenSkil li {
+    font-size: 16px;
+    color: #444; /* Warna teks list */
+    margin-bottom: 5px; /* Jarak bawah antara item */
+}
+
+/* Kontainer kontak */
+.contenKontak {
+    display: flex;
+    flex-direction: row; /* Menyusun gambar secara horizontal */
+    align-items: center; /* Menyelaraskan gambar secara vertikal di tengah */
+    justify-content: center; /* Pusatkan gambar di dalam kontainer */
+    gap: 20px; /* Jarak antar gambar */
+    margin: 20px auto;
+    text-align: center;
+    flex-wrap: wrap; /* Agar tetap rapi jika ukuran layar kecil */
+}
+
+/* Mengatur ukuran dan tampilan gambar agar konsisten */
+.contenKontak img {
+    width: 100px; /* Lebar gambar */
+    height: 100px; /* Tinggi gambar */
+    object-fit: cover; /* Memastikan gambar sesuai dengan ukuran */
+    border-radius: 8px; /* Membuat sudut gambar sedikit bulat */
+}
+
+/* Gaya untuk teks di bawah gambar */
+.contenKontak p {
+    width: 100%; /* Membuat paragraf mengambil seluruh lebar kontainer */
+    margin-top: 20px; /* Memberi jarak antara gambar dan teks */
+    text-align: center; /* Pusatkan teks */
+}
+
+
+/* Mengatur tampilan untuk konten utama */
+.a-content{
+    color:black; /* Warna teks */
+    text-decoration: none; /* Hilangkan garis bawah tautan */
+    font-size: 20px; /* Ukuran teks */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    flex-direction: column; /* Susun konten secara vertikal */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+  
+    
+}
+.teks{
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Memberikan jarak antar elemen */
+}
+/* Mengatur tampilan untuk gambar di dalam konten */
+.img-conten {
+    width: 580; /* Lebar gambar */
+    height: 400%; /* Tinggi gambar */
+}
+
+/* Mengatur tampilan untuk gambar tertentu dalam konten */
+.gambar-Wa{
+    width: 20%; /* Lebar gambar */
+    height: 20%; /* Tinggi gambar */
+}
+
+/* Mengatur tampilan dan tata letak untuk footer halaman */
+.footer {
+    height: 20vh; /* Tinggi footer */
+    background-color: 56AEEC; /* Warna latar belakang */
+    display: flex; /* Menggunakan flexbox untuk tata letak */
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+    font-size: 10px;
+}
+
+/* Mengatur tampilan untuk judul di dalam footer */
+.h1-terimakasih {
+    font-size: 20px ; /* Ukuran teks */
+    color: white; /* Warna teks */
+}
